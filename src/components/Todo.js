@@ -2,14 +2,14 @@ import { useState } from "react";
 import Backdrop from "./Backdrop";
 import Modal from "./Modal";
 
-function Todo(props) {
+ const Todo = (props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  function deleteHandler() {
+  const deleteHandler = () => {
     setModalIsOpen(true);
   }
 
-  function closeModalHandler() {
+  const closeModalHandler = () => {
     setModalIsOpen(false);
   }
 
